@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Firefly Customizer</title>
+<link rel="icon" type="image/png" href="misc_assets/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="misc_assets/favicon-16x16.png" sizes="16x16" />
+<link rel="stylesheet" href="layout.css" type="text/css">
+</head>
+
+<body>
+<img class = "header" src = "misc_assets/title banner.gif" alt = "title"/>
+
+<div class = "container">
+<span class = "intro">
+<p>Welcome to the Firefly Customizer! Mobile users may want to rotate their device.</p>
+</span>
+
+<button class="button home" onclick="location.href='https://ajc-pet-customizers.github.io';"> </button>
+<div class="color_panel_div">
+  <div></div>
+  <div class="color_grid" id = "color_grid_1"></div>
+  <div class="color_grid" id = "color_grid_2"></div>
+</div>
+
+<div class="eye_panel_div">
+  <div> </div> <div></div>
+</div>
+
+<div class="other_panel_div" style = "grid-area:other_panels">
+  <div></div><div></div><div></div>
+</div>
+
+<div class = "firefly_container" id="firefly_container">
+  <img class="firefly wing_base" id="wing_base" src = "misc_assets/empty.png" alt = "wing_base" style="position:relative"/>
+  <img class="firefly wing_gradient" id="wing_gradient" src = "misc_assets/empty.png" alt = "wing_gradient" style="position:absolute"/>
+  <img class="firefly glow" id="glow" src = "misc_assets/empty.png" alt = "glow" style="position:absolute"/>
+  <img class="firefly abdomen_base" id="abdomen_base" src = "misc_assets/empty.png" alt = "abdomen_base" style="position:absolute"/>
+  <img class="firefly edge" id="edge" src = "misc_assets/empty.png" alt = "edge" style="position:absolute"/>
+  <img class="firefly abdomen_gradient" id="abdomen_gradient" src = "misc_assets/empty.png" alt = "abdomen_gradient" style="position:absolute"/>
+  <img class="firefly head" id="head" src = "misc_assets/empty.png" alt = "head" style="position:absolute"/>
+  <img class="firefly eyeball" id="eyeball" src = "misc_assets/empty.png" alt = "eyeball" style="position:absolute"/>
+  <img class="firefly eye" id="eye" src = "misc_assets/empty.png" alt = "eye" style="position:absolute"/>
+  <img class="firefly antennae" id="antennae" src = "misc_assets/empty.png" alt = "antennae" style="position:absolute"/>
+  <img class="firefly pattern" id="pattern" src = "misc_assets/empty.png" alt = "pattern" style="position:absolute"/>
+  <img class="firefly spot" id="spot" src = "firefly_assets/spot.png" alt = "spot" style="position:absolute"/>
+  <img class="firefly watermark" id="watermark" src = "misc_assets/watermark.png" alt = "watermark" style="position:absolute"/>
+  <canvas class = "firefly_canvas" id="firefly_canvas" width="757" height="670"></canvas>
+  <div class="firefly" style="position:absolute; z-index: 200"> </div>
+  <button class="button save" id = "save"> </button>
+  <button class="button new_tab" id = "new_tab"> </button>
+  <button class="button randomize" id = "randomize"> </button>
+  <button class="button bg_contrast" id = "bg_contrast"> </button>
+</div>
+
+<div style = "grid-area:empty"></div>
+</div>
+<div class = "footer2"> Created by <a href="https://aj-item-worth.fandom.com/wiki/User:BrightSunshine" target="_blank">BrightSunshine</a> • Licensed under <a href = "https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC-BY-NC 4.0</a> • Fonts and some assets adapted from the <a href="https://www.animaljamarchives.com/" target="_blank">Animal Jam Archives</a> • Fair-use of copyrighted material from <a href="https://www.wildworks.com/" target="_blank">WildWorks</a></div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

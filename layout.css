@@ -1,0 +1,284 @@
+@font-face {
+  font-family: DigitalDelivery;
+  src: url("misc_assets/CCDigitalDelivery-Regular.otf");
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-image: url("misc_assets/leaf footer.png"), url("misc_assets/firefly forest.png");
+  background-repeat: repeat-x, no-repeat;
+  background-attachment: scroll, fixed;
+  background-size: 55%, cover;
+  background-position: center bottom, center;
+  font-size: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100%;
+}
+
+.container {
+  display: inline-grid;
+  grid-template-columns: 21vw 21vw 21vw 34vw;
+  grid-template-rows: auto auto 7vh;
+  grid-template-areas:
+    'text text text firefly'
+    'color_panel eye_panel other_panels firefly'
+    'empty empty empty empty';
+  width: 100%;
+  height: 100%; 
+  min-height:100%;
+  justify-content: center; 
+  align-items:center;
+  position:relative;
+}
+	
+p {
+  font-family: DigitalDelivery;
+  font-size: 1.3vw;
+  text-align: center;
+}
+
+a {
+  color: #CFA455;
+}
+
+a:hover {
+  color: #FBB148;
+}
+
+::-moz-selection { 
+  background: #FBB148;
+}
+
+::selection {
+  background: #FBB148;
+}
+
+.header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  width:20vw;
+  position:relative;
+}
+
+.intro {
+  grid-area:text; 
+  background-color:#F5F2E1; 
+  margin: 0 2%; 
+  border: 0.35vw solid #CFA455; 
+  border-radius: 6px; 
+  color:#7A4A12; 
+  align-self:flex-end;
+}
+
+.color_panel_div {
+  grid-area:color_panel;
+  background-image: url("misc_assets/color banner.png");
+  background-size: contain;
+  background-position: center top;
+  display: inline-grid;
+  grid-row-gap: 6%;
+  grid-template-columns: 65%;
+  grid-template-rows: 15% 30% 30%;
+  justify-content: center;
+  align-content: top;
+  background-repeat: no-repeat;
+  margin: 0px 0px;
+  width:21vw;
+  height:28vw;
+  position: relative;
+}
+
+.color_grid {
+  display: inline-grid;
+  position: relative;
+  transform: translate(-50%);
+  left: 50%;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 0px;
+  border: 0.35vw solid #CFA455;
+  background-color: #CFA455;
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+}
+
+.color_grid_button {
+  border: none;
+  margin: 0px 0px;
+  display: inline-block;
+  outline: none;
+}
+
+.color_grid_button:hover {
+  box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);
+}
+
+.eye_panel_div {
+  grid-area:eye_panel;
+  background-image: url("misc_assets/eye banner.png");
+  background-size: contain;
+  background-position: center top;
+  display: inline-grid;
+  grid-row-gap: 3%;
+  grid-column-gap: 4%;
+  grid-template-columns: repeat(2, 29.3%);
+  grid-template-rows: 16% 1fr 1fr 1fr 5%;
+  justify-content: center;
+  align-content: center;
+  background-repeat: no-repeat;
+  background-color:transparent;
+  width:21vw;
+  height:28vw;
+}
+
+.other_panel_div {
+  background-image: url("misc_assets/other banner.png");
+  background-size: contain;
+  background-position: center top;
+  display: inline-grid;
+  grid-row-gap: 2%;
+  grid-column-gap: 2%;
+  grid-template-columns: 22.1% 22.1% 22.1%;
+  grid-template-rows: 9% 17% 17% 17% 17%;
+  justify-content: center;
+  align-content: center;
+  background-repeat: no-repeat;
+  margin: 0px 0px;
+  width:21vw;
+  height:28vw;
+}
+
+.cell_button {
+  background-color: transparent;
+  background-size: contain; 
+  background-repeat: no-repeat;  
+  border: none;
+  outline: none;
+}
+
+.cell_button:hover {
+  box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);
+}
+
+.firefly_canvas {
+  border: none;
+  background-color: transparent;
+  position:absolute;
+  display:none;
+  top:0px;
+  left:0px;
+  z-index: 0;
+  width:34vw;
+  height:30vw;
+}
+
+.firefly_container {
+  background-image: url("misc_assets/light bg.png");
+  background-color: transparent;
+  background-size: contain;
+  width: 34vw;
+  height: 34vw;
+  grid-area: firefly;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.firefly {
+  top: -5%;
+  left: 4%;
+  width: 32vw; 
+  height: 28.32232497vw;
+}  
+
+.firefly.wing_base {z-index:10;}
+.firefly.wing_gradient {z-index:20;}
+.firefly.glow {z-index:30;}
+.firefly.abdomen_base {z-index:40;}
+.firefly.edge {z-index:50;}
+.firefly.abdomen_gradient {z-index:60;}
+.firefly.head {z-index:70;}
+.firefly.eyeball {z-index:80;}
+.firefly.eye {z-index:90;}
+.firefly.antennae {z-index:100;}
+.firefly.pattern {z-index:110;}
+.firefly.spot {z-index:120;}
+
+.button {
+  position: absolute;
+  top: 26vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 5vw; 
+  width: 5.25vw;
+  z-index: 100;
+  border:none;
+  background-color:transparent;
+  outline:none;
+}
+
+.button:hover {
+  box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);
+}
+
+.button:active {
+  box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);
+}
+
+.button.save {
+  transform: translate(-15%);
+  left: 15%;
+  background-image: url("button_assets/save button.png");
+  height: 5vw; 
+  width: 7.7vw;
+}
+
+.button.new_tab {
+  transform: translate(-42%);
+  left: 42%;
+  background-image: url("button_assets/new tab button.png");
+}
+
+.button.home {
+  position: fixed;
+  top:2vw;
+  left:2vw;
+  background-image: url("button_assets/home button.png");
+  z-index: 200;
+}
+
+.button.randomize {
+  transform: translate(-61.5%);
+  left: 61.5%;
+  background-image: url("button_assets/randomize button.png");
+}
+
+.button.bg_contrast {
+  transform: translate(-81.5%);
+  left: 81.5%;
+  background-image: url("button_assets/bg contrast button.png");
+}
+
+.footer2 {
+  font-size: 0.9vw;
+  font-family: DigitalDelivery;
+  color:#FFF7E4;
+  display:block;
+  position:absolute;
+  bottom: 0;
+  text-align: center;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-bottom:0.5%;
+}
