@@ -231,7 +231,7 @@ ctx.drawImage(wing_base,0,0);
 wing_gradient.src = document.getElementById("wing_gradient").src;
 wing_gradient.onload = function() {
 ctx.drawImage(wing_gradient,0,0);
-wing_gradient.src = document.getElementById("glow").src;
+glow.src = document.getElementById("glow").src;
 glow.onload = function() {
 ctx.drawImage(glow,0,0);
 abdomen_base.src = document.getElementById("abdomen_base").src;
@@ -263,7 +263,7 @@ spot.onload = function() {
 ctx.drawImage(spot,0,0);
 watermark.src = document.getElementById("watermark").src;
 watermark.onload = function() {
-
+ctx.drawImage(watermark,0,0);
 var image = firefly_canvas.toDataURL("image/png");
 if (type == "new_tab") { 
   var newTab = window.open();
