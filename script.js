@@ -179,7 +179,7 @@ function updateWings(newWings) {
     }
   }
   else {
-    document.getElementById("wing_base").src = "firefly_assets/wings/"+newWings+"/"+features.get("color")[0]+".png";
+    document.getElementById("wing_base").src = "firefly_assets/wings/"+newWings+"/"+features.get("color")[1]+".png";
     document.getElementById("wing_gradient").src = "misc_assets/empty.png";
   }
   updateBorders(features.get("wings"),newWings);
