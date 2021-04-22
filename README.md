@@ -1,5 +1,5 @@
 # Firefly Customizer ![Rainbow Firefly](https://github.com/ajc-pet-customizers/firefly/blob/main/misc_assets/favicon-32x32.png)
-Welcome to the Firefly Customizer's GitHub page! This project (website in progress) allows you to customize your own Pet Firefly as seen in the game [Animal Jam Classic](https://classic.animaljam.com/en) (AJC). (Note: this website does not create a firefly in-game, but allows you to see what it would look like.)
+Welcome to the Firefly Customizer's GitHub page! This project allows you to customize your own Pet Firefly as seen in the game [Animal Jam Classic](https://classic.animaljam.com/en) (AJC). (Note: this website does not create a firefly in-game, but allows you to see what it would look like.)
 
 # Preview
 ![Preview](https://github.com/ajc-pet-customizers/firefly/blob/main/misc_assets/firefly%20customizer%20preview.PNG)
